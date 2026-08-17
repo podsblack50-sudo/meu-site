@@ -32,7 +32,6 @@
       margin: 0;
       font-size: 38px;
       font-weight: 900;
-      color: #ffffff;
       text-shadow:
         0 0 10px #2583ff,
         0 0 25px #7b2cff;
@@ -47,7 +46,6 @@
     .titulo {
       margin: 45px 15px 10px;
       font-size: 32px;
-      color: #ffffff;
     }
 
     .descricao {
@@ -56,12 +54,16 @@
       font-size: 18px;
     }
 
-    .produto {
-      margin: 30px auto;
-      padding: 30px 22px;
-      width: calc(100% - 30px);
-      max-width: 380px;
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 380px));
+      gap: 25px;
+      justify-content: center;
+      padding: 0 15px;
+    }
 
+    .produto {
+      padding: 22px;
       background: linear-gradient(
         145deg,
         rgba(30, 36, 70, 0.95),
@@ -76,29 +78,37 @@
         0 0 35px rgba(123, 44, 255, 0.18);
     }
 
+    .produto img {
+      width: 100%;
+      height: 300px;
+      object-fit: contain;
+      border-radius: 18px;
+      margin-bottom: 15px;
+      background: #070a14;
+    }
+
     .produto h2 {
       margin: 5px 0 10px;
-      font-size: 32px;
-      color: #ffffff;
+      font-size: 28px;
     }
 
     .produto p {
       color: #c4c8d8;
       font-size: 17px;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
 
     .preco {
-      font-size: 32px;
+      font-size: 30px;
       font-weight: bold;
       color: #4da3ff;
       text-shadow: 0 0 15px rgba(77, 163, 255, 0.6);
-      margin: 25px 0;
+      margin: 20px 0;
     }
 
     .botao {
       display: block;
-      padding: 17px 25px;
+      padding: 17px 20px;
 
       background: linear-gradient(
         90deg,
@@ -116,8 +126,6 @@
       box-shadow:
         0 0 15px rgba(37, 131, 255, 0.5),
         0 0 25px rgba(123, 44, 255, 0.35);
-
-      transition: 0.2s;
     }
 
     .botao:active {
@@ -141,25 +149,94 @@
     <p class="subtitulo">Estilo único. Do seu jeito.</p>
   </header>
 
-  <h2 class="titulo">Escolha o seu favorito</h2>
+  <h2 class="titulo">Nossos produtos</h2>
 
   <p class="descricao">
-    Qualidade, estilo e personalidade em um só produto.
+    Confira nossos modelos personalizados.
   </p>
 
-  <div class="produto">
+  <main class="produtos">
 
-    <h2>Pod</h2>
+    <!-- PRODUTO 1 -->
+    <div class="produto">
+      <img src="pod1.jpg" alt="Pod personalizado 1">
 
-    <p>Pod com estilo exclusivo.</p>
+      <h2>Pod personalizado</h2>
 
-    <div class="preco">R$ 69,99</div>
+      <p>Modelo personalizado à mão.</p>
 
-    <a class="botao" href="#">
-      COMPRAR AGORA
-    </a>
+      <div class="preco">R$ 69,99</div>
 
-  </div>
+      <a class="botao" href="#">
+        COMPRAR AGORA
+      </a>
+    </div>
+
+
+    <!-- PRODUTO 2 -->
+    <div class="produto">
+      <img src="pod2.jpg" alt="Pod personalizado 2">
+
+      <h2>Pod personalizado</h2>
+
+      <p>Modelo personalizado à mão.</p>
+
+      <div class="preco">R$ 69,99</div>
+
+      <a class="botao" href="#">
+        COMPRAR AGORA
+      </a>
+    </div>
+
+
+    <!-- PRODUTO 3 -->
+    <div class="produto">
+      <img src="pod3.jpg" alt="Pod personalizado 3">
+
+      <h2>Pod personalizado</h2>
+
+      <p>Modelo personalizado à mão.</p>
+
+      <div class="preco">R$ 69,99</div>
+
+      <a class="botao" href="#">
+        COMPRAR AGORA
+      </a>
+    </div>
+
+
+    <!-- PRODUTO 4 -->
+    <div class="produto">
+      <img src="pod4.jpg" alt="Pod personalizado 4">
+
+      <h2>Pod personalizado</h2>
+
+      <p>Modelo personalizado à mão.</p>
+
+      <div class="preco">R$ 69,99</div>
+
+      <a class="botao" href="#">
+        COMPRAR AGORA
+      </a>
+    </div>
+
+
+    <!-- PRODUTO 5 -->
+    <div class="produto">
+      <img src="pod5.jpg" alt="Pod personalizado 5">
+
+      <h2>Pod personalizado</h2>
+
+      <p>Modelo personalizado à mão.</p>
+
+      <div class="preco">R$ 69,99</div>
+
+      <a class="botao" href="#">
+        COMPRAR AGORA
+      </a>
+    </div>
+
+  </main>
 
   <footer>
     © 2026 SMOKEPODS — Todos os direitos reservados.
