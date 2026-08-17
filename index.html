@@ -15,117 +15,120 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background:
-        radial-gradient(circle at top, #24104f 0%, #0b1020 45%, #05070d 100%);
+        radial-gradient(circle at top, #35106b 0%, #11152d 45%, #03050b 100%);
       color: white;
       text-align: center;
       min-height: 100vh;
     }
 
     header {
-      padding: 35px 20px;
-      background: linear-gradient(135deg, #080b15, #171044, #062b61);
-      border-bottom: 2px solid #6c2cff;
-      box-shadow: 0 0 25px rgba(82, 45, 255, 0.4);
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #050712, #32106b, #073b80);
+      border-bottom: 2px solid #8b35ff;
+      box-shadow: 0 0 30px rgba(117, 45, 255, 0.5);
     }
 
-    h1 {
+    header h1 {
       margin: 0;
-      font-size: 38px;
+      font-size: 42px;
       font-weight: 900;
       text-shadow:
-        0 0 10px #2583ff,
-        0 0 25px #7b2cff;
+        0 0 10px #168cff,
+        0 0 25px #a62cff;
     }
 
     .subtitulo {
-      margin: 10px 0 0;
-      color: #bfc9ff;
-      font-size: 17px;
+      margin-top: 10px;
+      color: #c8d2ff;
+      font-size: 18px;
     }
 
     .titulo {
-      margin: 45px 15px 10px;
+      margin: 40px 15px 10px;
       font-size: 32px;
+      text-shadow: 0 0 15px #713cff;
     }
 
     .descricao {
-      margin: 0 20px 30px;
-      color: #b9b9c9;
-      font-size: 18px;
+      color: #bfc3d5;
+      font-size: 17px;
+      margin: 0 20px 35px;
     }
 
     .produtos {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 380px));
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
       justify-content: center;
+      gap: 25px;
       padding: 0 15px;
     }
 
     .produto {
-      padding: 22px;
-      background: linear-gradient(
-        145deg,
-        rgba(30, 36, 70, 0.95),
-        rgba(13, 17, 35, 0.98)
-      );
+      background:
+        linear-gradient(
+          145deg,
+          rgba(35, 42, 82, 0.98),
+          rgba(10, 13, 28, 0.99)
+        );
 
-      border: 1px solid #633cff;
+      border: 1px solid #743cff;
       border-radius: 25px;
+      padding: 20px;
 
       box-shadow:
-        0 0 15px rgba(38, 131, 255, 0.25),
-        0 0 35px rgba(123, 44, 255, 0.18);
+        0 0 15px rgba(40, 130, 255, 0.25),
+        0 0 35px rgba(130, 45, 255, 0.2);
     }
 
     .produto img {
       width: 100%;
-      height: 300px;
+      height: 280px;
       object-fit: contain;
       border-radius: 18px;
-      margin-bottom: 15px;
-      background: #070a14;
+      background: #050711;
+      display: block;
+      margin-bottom: 18px;
     }
 
     .produto h2 {
-      margin: 5px 0 10px;
-      font-size: 28px;
+      font-size: 27px;
+      margin: 10px 0;
     }
 
     .produto p {
-      color: #c4c8d8;
-      font-size: 17px;
-      margin-bottom: 20px;
+      color: #c8cce0;
+      font-size: 16px;
     }
 
     .preco {
-      font-size: 30px;
+      font-size: 31px;
       font-weight: bold;
-      color: #4da3ff;
-      text-shadow: 0 0 15px rgba(77, 163, 255, 0.6);
+      color: #4da5ff;
       margin: 20px 0;
+      text-shadow: 0 0 15px rgba(77, 165, 255, 0.6);
     }
 
     .botao {
       display: block;
-      padding: 17px 20px;
+      padding: 16px;
+      border-radius: 15px;
 
-      background: linear-gradient(
-        90deg,
-        #1769ff,
-        #6c2cff,
-        #9b35ff
-      );
+      background:
+        linear-gradient(
+          90deg,
+          #1769ff,
+          #702cff,
+          #a332ff
+        );
 
       color: white;
       text-decoration: none;
-      border-radius: 15px;
-      font-size: 18px;
+      font-size: 17px;
       font-weight: bold;
 
       box-shadow:
-        0 0 15px rgba(37, 131, 255, 0.5),
-        0 0 25px rgba(123, 44, 255, 0.35);
+        0 0 15px rgba(30, 130, 255, 0.5),
+        0 0 25px rgba(130, 40, 255, 0.4);
     }
 
     .botao:active {
@@ -135,9 +138,9 @@
     footer {
       margin-top: 50px;
       padding: 25px 15px;
-      color: #777b8c;
+      color: #777c91;
+      border-top: 1px solid #272c45;
       font-size: 14px;
-      border-top: 1px solid #252a40;
     }
   </style>
 </head>
@@ -149,7 +152,7 @@
     <p class="subtitulo">Estilo único. Do seu jeito.</p>
   </header>
 
-  <h2 class="titulo">Nossos produtos</h2>
+  <h2 class="titulo">💜 Nossos Produtos</h2>
 
   <p class="descricao">
     Confira nossos modelos personalizados.
@@ -159,80 +162,90 @@
 
     <!-- PRODUTO 1 -->
     <div class="produto">
-      <img src="pod1.jpg" alt="Pod personalizado 1">
+      <img src="pod1.jpg" alt="Produto personalizado 1">
 
       <h2>Pod personalizado</h2>
 
-      <p>Modelo personalizado à mão.</p>
+      <p>Modelo exclusivo personalizado à mão.</p>
 
-      <div class="preco">R$ 69,99</div>
+      <div class="preco">
+        R$ 70,00
+      </div>
 
       <a class="botao" href="#">
-        COMPRAR AGORA
+        COMPRAR
       </a>
     </div>
 
 
     <!-- PRODUTO 2 -->
     <div class="produto">
-      <img src="pod2.jpg" alt="Pod personalizado 2">
+      <img src="pod2.jpg" alt="Produto personalizado 2">
 
       <h2>Pod personalizado</h2>
 
-      <p>Modelo personalizado à mão.</p>
+      <p>Modelo exclusivo personalizado à mão.</p>
 
-      <div class="preco">R$ 69,99</div>
+      <div class="preco">
+        R$ 70,00
+      </div>
 
       <a class="botao" href="#">
-        COMPRAR AGORA
+        COMPRAR
       </a>
     </div>
 
 
     <!-- PRODUTO 3 -->
     <div class="produto">
-      <img src="pod3.jpg" alt="Pod personalizado 3">
+      <img src="pod3.jpg" alt="Produto personalizado 3">
 
       <h2>Pod personalizado</h2>
 
-      <p>Modelo personalizado à mão.</p>
+      <p>Modelo exclusivo personalizado à mão.</p>
 
-      <div class="preco">R$ 69,99</div>
+      <div class="preco">
+        R$ 70,00
+      </div>
 
       <a class="botao" href="#">
-        COMPRAR AGORA
+        COMPRAR
       </a>
     </div>
 
 
     <!-- PRODUTO 4 -->
     <div class="produto">
-      <img src="pod4.jpg" alt="Pod personalizado 4">
+      <img src="pod4.jpg" alt="Produto personalizado 4">
 
       <h2>Pod personalizado</h2>
 
-      <p>Modelo personalizado à mão.</p>
+      <p>Modelo exclusivo personalizado à mão.</p>
 
-      <div class="preco">R$ 69,99</div>
+      <div class="preco">
+        R$ 70,00
+      </div>
 
       <a class="botao" href="#">
-        COMPRAR AGORA
+        COMPRAR
       </a>
     </div>
 
 
     <!-- PRODUTO 5 -->
     <div class="produto">
-      <img src="pod5.jpg" alt="Pod personalizado 5">
+      <img src="pod5.jpg" alt="Produto personalizado 5">
 
       <h2>Pod personalizado</h2>
 
-      <p>Modelo personalizado à mão.</p>
+      <p>Modelo exclusivo personalizado à mão.</p>
 
-      <div class="preco">R$ 69,99</div>
+      <div class="preco">
+        R$ 70,00
+      </div>
 
       <a class="botao" href="#">
-        COMPRAR AGORA
+        COMPRAR
       </a>
     </div>
 
