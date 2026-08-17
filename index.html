@@ -3,54 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>SmokePods</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0b1220;
+      background:
+        radial-gradient(circle at top, #24104f 0%, #0b1020 45%, #05070d 100%);
       color: white;
       text-align: center;
+      min-height: 100vh;
     }
 
     header {
-      padding: 25px 15px;
-      background: #101c35;
+      padding: 35px 20px;
+      background: linear-gradient(135deg, #080b15, #171044, #062b61);
+      border-bottom: 2px solid #6c2cff;
+      box-shadow: 0 0 25px rgba(82, 45, 255, 0.4);
     }
 
     h1 {
       margin: 0;
-      color: #4da3ff;
+      font-size: 38px;
+      font-weight: 900;
+      color: #ffffff;
+      text-shadow:
+        0 0 10px #2583ff,
+        0 0 25px #7b2cff;
+    }
+
+    .subtitulo {
+      margin: 10px 0 0;
+      color: #bfc9ff;
+      font-size: 17px;
+    }
+
+    .titulo {
+      margin: 45px 15px 10px;
       font-size: 32px;
+      color: #ffffff;
+    }
+
+    .descricao {
+      margin: 0 20px 30px;
+      color: #b9b9c9;
+      font-size: 18px;
     }
 
     .produto {
-      margin: 40px auto;
-      padding: 25px;
-      max-width: 350px;
-      background: #14233f;
-      border-radius: 20px;
+      margin: 30px auto;
+      padding: 30px 22px;
+      width: calc(100% - 30px);
+      max-width: 380px;
+
+      background: linear-gradient(
+        145deg,
+        rgba(30, 36, 70, 0.95),
+        rgba(13, 17, 35, 0.98)
+      );
+
+      border: 1px solid #633cff;
+      border-radius: 25px;
+
+      box-shadow:
+        0 0 15px rgba(38, 131, 255, 0.25),
+        0 0 35px rgba(123, 44, 255, 0.18);
     }
 
     .produto h2 {
-      font-size: 28px;
-      margin: 15px 0;
+      margin: 5px 0 10px;
+      font-size: 32px;
+      color: #ffffff;
+    }
+
+    .produto p {
+      color: #c4c8d8;
+      font-size: 17px;
+      margin-bottom: 25px;
     }
 
     .preco {
-      font-size: 26px;
+      font-size: 32px;
       font-weight: bold;
-      margin: 20px 0;
+      color: #4da3ff;
+      text-shadow: 0 0 15px rgba(77, 163, 255, 0.6);
+      margin: 25px 0;
     }
 
     .botao {
-      display: inline-block;
-      padding: 15px 30px;
-      background: #2583ff;
+      display: block;
+      padding: 17px 25px;
+
+      background: linear-gradient(
+        90deg,
+        #1769ff,
+        #6c2cff,
+        #9b35ff
+      );
+
       color: white;
       text-decoration: none;
-      border-radius: 12px;
+      border-radius: 15px;
+      font-size: 18px;
       font-weight: bold;
+
+      box-shadow:
+        0 0 15px rgba(37, 131, 255, 0.5),
+        0 0 25px rgba(123, 44, 255, 0.35);
+
+      transition: 0.2s;
+    }
+
+    .botao:active {
+      transform: scale(0.97);
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 25px 15px;
+      color: #777b8c;
+      font-size: 14px;
+      border-top: 1px solid #252a40;
     }
   </style>
 </head>
@@ -59,17 +138,32 @@
 
   <header>
     <h1>SmokePods</h1>
+    <p class="subtitulo">Estilo único. Do seu jeito.</p>
   </header>
 
-  <div class="produto">
-    <h2>pod</h2>
+  <h2 class="titulo">Escolha o seu favorito</h2>
 
-    <p>pod</p>
+  <p class="descricao">
+    Qualidade, estilo e personalidade em um só produto.
+  </p>
+
+  <div class="produto">
+
+    <h2>Pod</h2>
+
+    <p>Pod com estilo exclusivo.</p>
 
     <div class="preco">R$ 69,99</div>
 
-    <a class="botao" href="#">Comprar</a>
+    <a class="botao" href="#">
+      COMPRAR AGORA
+    </a>
+
   </div>
+
+  <footer>
+    © 2026 SMOKEPODS — Todos os direitos reservados.
+  </footer>
 
 </body>
 </html>
